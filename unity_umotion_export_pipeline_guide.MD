@@ -33,12 +33,11 @@ First, open an empty scene in blender and import synty's fbx file with the chara
 
 Delete the default cube, camera and light from blender, only the character should be at the scene.
 
-> place holder 1_
 ![Character f*ckd up][def]
 
 If your character looks like this, change to pose mode then go to `Pose > Clear Transform` and click `All`. It should correct the transform.
 
-> place holder 2_
+![Fixed transform][def2]
 
 #### 1.2 Delete unwanted characters
 
@@ -46,9 +45,13 @@ Now, open the characters armature and delete every character that you don't need
 
 > place holder 3_
 
+![Before unwanted character deletion][def_before_deletion]
+
 Before
 
 > place holder 4_
+
+![After deletion][def_4_after_deletion]
 
 After
 
@@ -56,6 +59,8 @@ After
 Export the character to a location of your choice and make a copy of that export. We will use this copy as a target for the animation with UMotion.
 
 > place holder 5_
+
+![Export options][def_5_export_options]
 
 I'm using this options for export, don't know don't care what they do, *it just works* ®
 
@@ -80,6 +85,8 @@ Open UMotion Pose editor drag (or select) the character inside the `Select a Gam
 
 > place holder 6_
 
+![Pose editor options][def_6_pose_editor_options]
+
 
 #### 2.3 Prepare animation for export
 
@@ -87,9 +94,14 @@ Now, go back to the Clip Editor, if everything has been done correctly so far, y
 
 > place holder 7_
 
+![Clip editor first step][def_7_clip_editor_first_step]
+
 Go to `File > Import Clips` and select the desired animation
 
 > place holder 8_
+
+![Clip editor window][def_8_clip_editor_window]
+
 
 I'm adding the Sprint Forward Unarmed animation. The yellow warning indicates that some transforms from the animation don't exist in the model, you can ignore this (I think, have you read the disclaimer at the top? :P )
 
@@ -97,9 +109,13 @@ Hit import, if everything goes well, you should see the keyframes show up in UMo
 
 > place holder 9_
 
+![Clip editor success!][def_9_clip_editor_success]
+
 You can hit play in Clip Editor and should see the character being animated in the scene
 
 > place holder 10_
+
+![Character being animated in UMotion][def_10_character_animated_umotion]
 
 #### 2.3 Export the animation
 
@@ -109,10 +125,14 @@ You may see a message like this:
 
 > place holder 11_
 
+![No export destination message][def_11_no_export_dest_message]
+
 Don't worry! Click Open Settings. The Clip Export Settings window should open.
 Configure as I did here:
 
 > place holder 12_
+
+![Clip export settings][def_12_clip_export_settings]
 
 Set File format as Fbx Binary
 Write mode to Update Existing File
@@ -129,6 +149,8 @@ Now, again, in UMotion Clip Editor go to` File > Export > Current Clip`. UMotion
 If everything goes right, you should see a message like this:
 
 > place holder 13_
+
+![Export success!][def_13_clip_export_success]
 
 Export is done!
 
@@ -155,7 +177,11 @@ It's very easy to fix tho, don't worry, you can either create the material manua
 
 > place holder 14_
 
+![Material correction][def_14_material_correction]
+
 Great!
+
+#### 3.2 Finally!
 
 Now double click on the animation we imported (in this guide: `synty_roadworker_anim.fbx`), select the character (`synty_roadworker.fbx`) as a preview model and Voila! Animation is working!!
 
@@ -163,8 +189,25 @@ Now double click on the animation we imported (in this guide: `synty_roadworker_
 
 > place holder 15_
 
+![Animation running!][def_15_animation_running]
+
+
 Hope this guide helps you!
 Thanks for reading!
 
 
 [def]: /unity_umotion_export_pipeline_guide/1_character_fckd_up.png
+[def2]: /unity_umotion_export_pipeline_guide/2_character_corrected.png
+[def_before_deletion]: /unity_umotion_export_pipeline_guide/3_before_elimination.png
+[def_4_after_deletion]: /unity_umotion_export_pipeline_guide/4_after_elimination.png
+[def_5_export_options]: /unity_umotion_export_pipeline_guide/5_export_options.png
+[def_6_pose_editor_options]: /unity_umotion_export_pipeline_guide/6_pose_editor_setup.png
+[def_7_clip_editor_first_step]: /unity_umotion_export_pipeline_guide/7_clipeditor_first_step.png
+[def_8_clip_editor_window]: /unity_umotion_export_pipeline_guide/8_clip_import_window.png
+[def_9_clip_editor_success]: /unity_umotion_export_pipeline_guide/9_clip_import_success.png
+[def_10_character_animated_umotion]: /unity_umotion_export_pipeline_guide/10_character_being_animated.png
+[def_11_no_export_dest_message]: /unity_umotion_export_pipeline_guide/11_no_export_destination.png
+[def_12_clip_export_settings]: /unity_umotion_export_pipeline_guide/12_clip_settings.png
+[def_13_clip_export_success]: /unity_umotion_export_pipeline_guide/13_export_success.png
+[def_14_material_correction]: /unity_umotion_export_pipeline_guide/14_material_correction.png
+[def_15_animation_running]: /unity_umotion_export_pipeline_guide/15_character_running.png
