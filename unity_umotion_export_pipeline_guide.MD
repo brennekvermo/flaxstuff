@@ -33,37 +33,30 @@ First, open an empty scene in blender and import synty's fbx file with the chara
 
 Delete the default cube, camera and light from blender, only the character should be at the scene.
 
-<div style="text-align:center">
-    ![Character f*ckd up][def]
-</div>
+![Character f*ckd up][def]
 
 If your character looks like this, change to pose mode then go to `Pose > Clear Transform` and click `All`. It should correct the transform.
 
-<div style="text-align:center">
-    ![Fixed transform][def2]
-</div>
+![Fixed transform][def2]
 
 #### 1.2 Delete unwanted characters
 
 Now, open the characters armature and delete every character that you don't need, in this guide I'll use the Road Worker.
 
-<div style="text-align:center">
-    ![Before unwanted character deletion][def_before_deletion]
-</div>
+
+![Before unwanted character deletion][def_before_deletion]
+
 Before
 
 
-<div style="text-align:center">
-    ![After deletion][def_4_after_deletion]
-</div>
+![After deletion][def_4_after_deletion]
+
 After
 
 #### 1.3 Export the character to Fbx
 Export the character to a location of your choice and make a copy of that export. We will use this copy as a target for the animation with UMotion.
 
-<div style="text-align:center">
-    ![Export options][def_5_export_options]
-</div>
+![Export options][def_5_export_options]
 
 I'm using this options for export, don't know don't care what they do, *it just works* ®
 
@@ -86,24 +79,19 @@ Once the project is created, drag the character into the scene or hierarchy to c
 
 Open UMotion Pose editor drag (or select) the character inside the `Select a GameObject to animate` field, if done correclty, it should look like this:
 
-<div style="text-align:center">
-    ![Pose editor options][def_6_pose_editor_options]
-</div>
+![Pose editor options][def_6_pose_editor_options]
 
 
 #### 2.3 Prepare animation for export
 
 Now, go back to the Clip Editor, if everything has been done correctly so far, you should see this on the left panel:
 
-<div style="text-align:center">
-    ![Clip editor first step][def_7_clip_editor_first_step]
-</div>
+![Clip editor first step][def_7_clip_editor_first_step]
+
 
 Go to `File > Import Clips` and select the desired animation
 
-<div style="text-align:center">
-    ![Clip editor window][def_8_clip_editor_window]
-</div>
+![Clip editor window][def_8_clip_editor_window]
 
 
 I'm adding the Sprint Forward Unarmed animation. The yellow warning indicates that some transforms from the animation don't exist in the model, you can ignore this (I think, have you read the disclaimer at the top? :P )
@@ -111,15 +99,13 @@ I'm adding the Sprint Forward Unarmed animation. The yellow warning indicates th
 Hit import, if everything goes well, you should see the keyframes show up in UMotion's Clip Editor.
 
 
-<div style="text-align:center">
-    ![Clip editor success!][def_9_clip_editor_success]
-</div>
+![Clip editor success!][def_9_clip_editor_success]
+
 
 You can hit play in Clip Editor and should see the character being animated in the scene
 
-<div style="text-align:center">
-    ![Character being animated in UMotion][def_10_character_animated_umotion]
-</div>
+![Character being animated in UMotion][def_10_character_animated_umotion]
+
 
 #### 2.3 Export the animation
 
@@ -128,16 +114,13 @@ We're almost there! In UMotion Clip Editor go to `File > Export > Current Clip` 
 You may see a message like this:
 
 
-<div style="text-align:center">
-    ![No export destination message][def_11_no_export_dest_message]
-</div>
+![No export destination message][def_11_no_export_dest_message]
 
 Don't worry! Click Open Settings. The Clip Export Settings window should open.
 Configure as I did here:
 
-<div style="text-align:center">
-    ![Clip export settings][def_12_clip_export_settings]
-</div>
+![Clip export settings][def_12_clip_export_settings]
+
 
 Set File format as Fbx Binary
 Write mode to Update Existing File
@@ -153,9 +136,7 @@ Now, again, in UMotion Clip Editor go to` File > Export > Current Clip`. UMotion
 
 If everything goes right, you should see a message like this:
 
-<div style="text-align:center">
-    ![Export success!][def_13_clip_export_success]
-</div>
+![Export success!][def_13_clip_export_success]
 
 Export is done!
 
@@ -180,9 +161,7 @@ It's very easy to fix tho, don't worry, you can either create the material manua
 * Inside that folder, is the material atlas, open your character (roadworker for example) by double clicking on it, go to materials and select the material from the menu.
 * It should now show the correct materials! (also you can safely delete the original Character.fbx file from the flax project, as we already have the material atlas setup)
 
-<div style="text-align:center">
-    ![Material correction][def_14_material_correction]
-</div>
+![Material correction][def_14_material_correction]
 
 Great!
 
@@ -192,9 +171,7 @@ Now double click on the animation we imported (in this guide: `synty_roadworker_
 
 
 
-<div style="text-align:center">
-    ![Animation running!][def_15_animation_running]
-</div>
+![Animation running!][def_15_animation_running]
 
 
 Hope this guide helps you!
