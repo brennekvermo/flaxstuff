@@ -77,7 +77,7 @@ Now, open UMotion PRO clip and create a new humanoid UMotion PRO project. For si
 
 Once the project is created, drag the character into the scene or hierarchy to create an instance of it (it should automatically add an Animator component)
 
-Open UMotion Pose editor drag (or select) the character inside the `Select a GameObject to animate` field, if done correclty, it should look like this:
+Open UMotion Pose editor and drag (or select) the character inside the `Select a GameObject to animate` field, if done correclty, it should look like this:
 
 ![Pose editor options][def_6_pose_editor_options]
 
