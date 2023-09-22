@@ -151,13 +151,13 @@ Remember to set the character as a `Skinned Model` and the Animation as `Animati
 #### 3.1 Possible problem with materials
 
 
-You may see that the character you just imported is missing it's material and look all gray. This seems to happen (my guess as an absolute ignorant in the field of technical art) because how Synty handles material atlases.
+You may see that the character you just imported is missing it's material and looks all gray. This seems to happen (my guess as an absolute ignorant in the field of technical art) because how Synty handles material atlasses.
 
 It's very easy to fix tho, don't worry, you can either create the material manually using the textures that should be present in your asset pack, or do the following:
 
-* Go to Synty asset folder and import into Flax the same .fbx file we imported into blender (or any other file that carry the same atlas)
-* Import that original Character.fbx file as a `Skinned Model` as we did with our character.
-* You should see that once the import is done, a folder should show up with the material at the same location where Character.fbx file is (folder name should be Character too!)
+* Go to Synty asset folder and import into Flax the same .fbx file (Character.fbx) we imported into blender (or any other file that carries the same atlas).
+* Remember to import that original Character.fbx file as a `Skinned Model` as we did with our character.
+* You should see that once the import is done, a folder should show up with the material at the same location where Character.fbx file is (folder name should be Character too!).
 * Inside that folder, is the material atlas, open your character (roadworker for example) by double clicking on it, go to materials and select the material from the menu.
 * It should now show the correct materials! (also you can safely delete the original Character.fbx file from the flax project, as we already have the material atlas setup)
 
