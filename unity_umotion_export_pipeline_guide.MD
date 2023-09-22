@@ -34,6 +34,7 @@ First, open an empty scene in blender and import synty's fbx file with the chara
 Delete the default cube, camera and light from blender, only the character should be at the scene.
 
 > place holder 1_
+![Character f*ckd up][def]
 
 If your character looks like this, change to pose mode then go to `Pose > Clear Transform` and click `All`. It should correct the transform.
 
@@ -164,3 +165,6 @@ Now double click on the animation we imported (in this guide: `synty_roadworker_
 
 Hope this guide helps you!
 Thanks for reading!
+
+
+[def]: /unity_umotion_export_pipeline_guide/1_character_fckd_up.png
