@@ -73,7 +73,7 @@ Also, if you haven't already, import the desired animation fbx file.
 
 #### 2.2 Configure project and character with UMotion PRO
 
-Now, open UMotion PRO clip and create a new humanoid UMotion PRO project. For simplicity, I placed the fbx files and the umotion project file inside the same folder.
+Now, open UMotion PRO Clip editor and create a new humanoid UMotion PRO project. For simplicity, I placed the fbx files and the umotion project file inside the same folder.
 
 Once the project is created, drag the character into the scene or hierarchy to create an instance of it (it should automatically add an Animator component)
 
