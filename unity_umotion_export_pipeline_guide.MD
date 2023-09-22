@@ -129,7 +129,7 @@ And set destination file to the copy of the .fbx file you imported into the proj
 
 > So remember, one .fbx file holds the character, and the other one holds the animation!
 
-Some other configurations may work, I don't know, these are just that worked for me.
+Some other configurations may work, I don't know, these just worked for me.
 
 Hit close once you're done.
 Now, again, in UMotion Clip Editor go to` File > Export > Current Clip`. UMotion will start exporting the clip.
